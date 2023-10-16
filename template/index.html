@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Project</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="acceso-login" class="formulario__login" method="post">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electronico" id="usuario" name="txtCorreo">
+                    <input type="password" placeholder="Contraseña" id="clave" name="txtPassword">
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <!--Register-->
+                <form action="new-registro" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" placeholder="Usuario" name="txtCorreoRegister">
+                    <input type="password" placeholder="Contraseña" name="txtPasswordRegister">
+                    <button>Regístrarse</button>
+                    <button type="submit">vamos a registrarno</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
