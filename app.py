@@ -4,10 +4,10 @@ from flask_mysqldb import MySQL, MySQLdb
 app = Flask(__name__, template_folder='template')
 
 # Configuración de la base de datos
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_HOST'] = 'database-login.cbirk4gfi5rx.us-east-2.rds.amazonaws.com'
+app.config['MYSQL_USER'] = 'admin'
 app.config['MYSQL_PASSWORD'] = '123456789'
-app.config['MYSQL_DB'] = 'loginexample'
+app.config['MYSQL_DB'] = 'loginaws'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql = MySQL(app)
 
