@@ -1,0 +1,96 @@
+/* Reset de estilos para eliminar márgenes y relleno predeterminados */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1{
+    color: #0077cc;
+    text-align: center;
+
+  }
+  
+  /* Estilo para el fondo del cuerpo */
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para la lista desordenada (ul) */
+ul {
+    list-style: none;
+    margin: 0 auto; /* Centro horizontalmente */
+    width: 50%; /* Ocupa la mitad de la pantalla */
+    padding: 0;
+  }
+  
+  /* Estilo para los elementos de lista (li) */
+  li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px auto; /* Centro horizontalmente */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+  }
+  
+  /* Estilo para los enlaces (a) dentro de los elementos de lista */
+  li a {
+    color: #0077cc; /* Azul */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Estilo para los enlaces al pasar el mouse sobre ellos */
+  li a:hover {
+    color: #46A2FD; /* Azul más claro */
+  }
+  
+   /* Estilos para el modal */
+   .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+ /* Estilos para el contenedor del botón en el extremo derecho */
+.button-container {
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    justify-content: flex-end; /* Alinear los elementos al extremo derecho */
+    margin-top: 10px; /* Espaciado superior para separar los botones de otros elementos */
+  }
+  
+  /* Estilos para los botones */
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el botón "Ver detalles" */
+  button.ver-detalles {
+    background-color: #28A745;
+  }
+  
+  /* Estilos para el botón "Cerrar" del modal */
+  button.cerrar-modal {
+    background-color: #DC3545;
+  }
+  
+  
